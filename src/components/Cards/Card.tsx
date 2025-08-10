@@ -125,11 +125,11 @@ const Card: React.FC = () => {
     },
   };
   const barData = {
-    labels: ["Electronics", "Clothing", "Home", "Beauty", "Sports", "Books"],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
     datasets: [
       {
-        label: "Units Sold",
-        data: [1250, 980, 1560, 890, 1150, 720],
+        label: "User Interaction",
+        data: [725000, 980000, 656000, 890000, 515000, 372000],
         backgroundColor: [
           "rgba(59, 130, 246, 0.7)",
           "rgba(16, 185, 129, 0.7)",
@@ -160,7 +160,7 @@ const Card: React.FC = () => {
       },
       title: {
         display: true,
-        text: "Product Distribution",
+        text: "Total User in a Month (for 6-month)",
         font: {
           size: 16,
           weight: "bold" as const,
@@ -231,10 +231,10 @@ const Card: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <header className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-            Sales Dashboard
+            Dashboard
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Performance analytics and sales metrics
+            Performance Analytics
           </p>
         </header>
           <div className="lg:col-span-2">
@@ -298,9 +298,7 @@ const Card: React.FC = () => {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-4 w-4 mr-1 ${
-                      card.changeType === "positive" ? "" : "rotate-180"
-                    }`}
+                    className={`h-4 w-4 mr-1`}
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
