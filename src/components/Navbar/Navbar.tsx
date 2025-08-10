@@ -37,6 +37,7 @@ const Navbar: React.FC = () => {
       <nav className="flex items-center justify-between sticky top-0 bg-cyan-600 h-16 w-full px-6 z-50 shadow-lg">
         <span className="text-white font-bold text-xl cursor-pointer">
            <img className='w-10 h-10 rounded-3xl' src="https://res.cloudinary.com/dvzy9mzeh/image/upload/v1738747012/student_images/school_management_system.png" alt="navlogo"></img>
+        </span>
         {isMobile ? (
           <button 
             onClick={toggleDrawer}
