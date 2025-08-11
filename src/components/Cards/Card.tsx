@@ -179,7 +179,7 @@ const Card: React.FC = () => {
         callbacks: {
           label: function (context: unknown) {
             const ctx = context as { parsed: { y: number } };
-            return `${ctx.parsed.y} units`;
+            return `${ctx.parsed.y} person`;
           },
         },
       },
